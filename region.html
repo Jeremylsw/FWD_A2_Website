@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia</title>
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src='bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js'></script>
+
+    <style>
+        .nav-link,
+        .navbar-brand,
+        .dropdown-item {
+            color: white;
+        }
+
+        ul>li a:hover,
+        #mainName:hover {
+            color: lightblue !important;
+        }
+
+        .card-title {
+            font-family: 'GT1', sans-serif;
+        }
+
+        .card-text {
+            font-family: 'GT3', sans-serif;
+        }
+
+        .attractions_visited {
+            font-family: 'GT3', sans-serif;
+            font-size: 0.8em;
+            background-color: rgb(248, 230, 233);
+            width: 120px;
+            height: 18px;
+            /* Center elements within row div */
+            display: flex;
+            justify-content: center;
+            /* Rounded corners */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <div id="returnToTop" class="bg-image"
+        style="background-image: url('Images/packages_header.jpg'); background-size: cover; height:100vh; width: 100vw;">
+        <!-- HEADER NAV BAR  -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/icon-192x192.png" alt="Bootstrap" width="30" height="26">
+                </a>
+                <a id="mainName" href="index.html" class="navbar-brand fst-italic"
+                    style="font-family: 'GT6', sans-serif;">Regent Travel</a>
+                <!-- COLLAPSE NAV BAR WHEN SCREEN RESOLUTION SMALL -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAV BAR CONTENTS -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Regions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="region.html">Asia</a></li>
+                                <li><a class="dropdown-item" href="region.html">Europe</a></li>
+                                <li><a class="dropdown-item" href="region.html">Exotic</a></li>
+                                <li><a class="dropdown-item" href="region.html">Middle East</a></li>
+                                <li><a class="dropdown-item" href="region.html">North America</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Promotions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="package_details.html">6D 5N Turkey Adventure</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">5D 3N Tokyo City
+                                        Exploration</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">4D 2N Singapore </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- HEADER NAV BAR END -->
+
+        <!-- CENTERED HERO TEXT -->
+        <div class="w-100 my-5 mt-5 text-center position-absolute top-50 start-50 translate-middle"
+            style="color: white;">
+            <h1 class="display-3 fw-bolder" style="font-family: 'GT3', sans-serif;"> ASIA PACKAGES </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="font-family: 'GT2', sans-serif;">Embark on an Exotic Expedition: Unveiling
+                    Asia's Treasures, One Journey at a Time</p>
+            </div>
+        </div>
+        <!-- CENTERED HERO TEXT END -->
+
+    </div>
+
+
+    <!-- MAIN BODY WITH CARDS 
+     LAYOUT OF ROWS (LG+):
+     2(OFFSET) 2(CARD) 1(OFFSET) 2(CARD) 1(OFFSET) 2(CARD) 2(OFFSET)
+
+     LAYOUT OF ROWS (MD):
+     2(OFFSET) 3(CARD) 2(OFFSET) 3(CARD) 2(OFFSET)
+     4(OFFSET) 3(CARD) 4(OFFSET)
+
+     LAYOUT OF ROWS (SM):
+     3(OFFSET) 6(CARD) 3(OFFSET) -->
+    <section class="container-fluid overflow-y-auto pb-5"
+        style="min-height: 100vh; background-color: rgb(236, 197, 204);">
+
+        <!-- FIRST ROW OF 3X CARDS  -->
+        <div class="row">
+
+            <!-- CARD #1  -->
+            <div
+                class="card offset-lg-2 col-lg-2 offset-md-2 col-md-3 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4 ">
+                <a href="package_details.html">
+                    <img src="Images/tokyo_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">5D 3N Tokyo City Exploration</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_4.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 12
+                        </div>
+                    </div>
+                    <p class="card-text"> Experience the vibrant city of Tokyo like never before as you explore
+                        iconic landmarks, savor famous japanese cuisine, and dive into the buzzing
+                        energy of this cultural metropolis.</p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$3600</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARD #2  -->
+            <div
+                class="card offset-lg-1 col-lg-2 offset-md-2 col-md-3 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4">
+                <a href="package_details.html">
+                    <img src="Images/kyoto_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">4D 3N Kyoto Sakura Tour</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_2.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 8
+                        </div>
+                    </div>
+                    <p class="card-text">Embark on an enchanting exploration of Kyoto's beauty and cultural wonders
+                        and immerse yourself in this historic city of Japan all while immersing
+                        in Japan's famous sakura season.</p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$2600</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARD #3  -->
+            <div
+                class="card offset-lg-1 col-lg-2 offset-md-4 col-md-4 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4">
+                <a href="package_details.html">
+                    <img src="Images/hiroshima_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">2D 1N Hiroshima Memorial Walk</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_1.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 3
+                        </div>
+                    </div>
+                    <p class="card-text">Join us on a journey through the historical significance of Hiroshima and trace
+                        the remnants of the atomic bombing and feel the city's
+                        resilience and hope for peace as you explore the streets. </p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$1800</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECOND ROW OF 3X CARDS  -->
+        <div class="row">
+
+            <!-- ROW 2 CARD 1 -->
+            <div
+                class="card offset-lg-2 col-lg-2 offset-md-2 col-md-3 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4">
+                <a href="package_details.html">
+                    <img src="Images/osaka_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">7D 5N Complete Osaka Tour</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_3.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 17
+                        </div>
+                    </div>
+                    <p class="card-text">Explore Osaka with the perfect blend of ancient traditions and
+                        modern marvels as you visit street markets, castles and temples
+                        and experience the warm hospitality of Osaka. </p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$2900</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 CARD 2  -->
+            <div
+                class="card offset-lg-1 col-lg-2 offset-md-2 col-md-3 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4">
+                <a href="package_details.html">
+                    <img src="Images/yokohama_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">3D 2N Yokohama Nature Trail</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_2.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 7
+                        </div>
+                    </div>
+                    <p class="card-text">Discover a perfect fusion of history, culture, and modernity in
+                        this vibrant Japanese city of Yokohama. Explore unique landscapes and
+                        induldge in delectable cuisines and create lifetime memories.</p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$2450</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 CARD 3  -->
+            <div
+                class="card offset-lg-1 col-lg-2 offset-md-4 col-md-4 offset-sm-3 col-sm-6 mt-5 mb-3 px-0 border-0 rounded-4">
+                <a href="package_details.html">
+                    <img src="Images/sapporo_wallpaper.jpeg" class="card-img-top rounded-top-4" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-1">2D 1N Sapporo Food Tour</h5>
+                    <div class='row d-flex align-items-center justify-content-left pb-3' style="height: 30px;">
+                        <!-- Walking intensity -->
+                        <!-- Reference: Refer to references.txt [17-21] -->
+                        <img class="col-lg-3 col-md-3 col-sm-3" src="Images/person_signal_1.png" height='15px'
+                            width='auto' alt="walking_intensity">
+                        <!-- Attraction Count -->
+                        <div class='attractions_visited'>
+                            Attractions Visited: 4
+                        </div>
+                    </div>
+                    <p class="card-text">Fill your stomachs with this Sapporo food and drinks tour where you
+                        will experience gastronomic delights at places such as the Nijo Fish market and
+                        Sapporo's renowned sake brewery.</p>
+                    <!-- Price -->
+                    <div class='package_price' style="font-family: 'GT1', sans-serif;">
+                        <p class="fw-bolder mb-0">From</p>
+                        <p class='ActualPrice mb-0' style="color:green">S$2100</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class='container-fluid d-flex align-items-center justify-content-center bg-dark'>
+        <address class='m-3' style="font-family: 'GT2', sans-serif; color: white;">© 2023 Regent Travel</address>
+    </footer>
+
+    <!-- FIXED SCROLL TO TOP BUTTON -->
+    <button class="fixed-bottom m-3 bg-dark rounded-4 border-0" style="width: 10vw;">
+        <a class="text-decoration-none" style="color: white;" href="#returnToTop">Return to Top</a>
+    </button>
+
+</body>
+
+</html>

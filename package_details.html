@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details</title>
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src='bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js'></script>
+
+    <style>
+        .nav-link,
+        .navbar-brand,
+        .dropdown-item {
+            color: white;
+        }
+
+        ul>li a:hover,
+        #mainName:hover {
+            color: lightblue !important;
+        }
+
+        #bodyRowHeader {
+            color: gray;
+            font-family: 'GT3', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <div id="returnToTop" class="bg-image"
+        style="background-image: url('Images/package_details_header.jpeg'); background-size: cover; height:100vh; width: 100vw;">
+        <!-- HEADER NAV BAR  -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/icon-192x192.png" alt="Bootstrap" width="30" height="26">
+                </a>
+                <a id="mainName" href="index.html" class="navbar-brand fst-italic"
+                    style="font-family: 'GT6', sans-serif;">Regent Travel</a>
+                <!-- COLLAPSE NAV BAR WHEN SCREEN RESOLUTION SMALL -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAV BAR CONTENTS -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Regions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="region.html">Asia</a></li>
+                                <li><a class="dropdown-item" href="region.html">Europe</a></li>
+                                <li><a class="dropdown-item" href="region.html">Exotic</a></li>
+                                <li><a class="dropdown-item" href="region.html">Middle East</a></li>
+                                <li><a class="dropdown-item" href="region.html">North America</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Promotions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="package_details.html">6D 5N Turkey Adventure</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">5D 3N Tokyo City
+                                        Exploration</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">4D 2N Singapore </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- HEADER NAV BAR END -->
+
+        <!-- CENTERED HERO TEXT -->
+        <div class="w-100 my-5 mt-5 text-center position-absolute top-50 start-50 translate-middle"
+            style="color: white;">
+            <h1 class="display-3 fw-bolder" style="font-family: 'GT3', sans-serif;"> TOKYO </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="font-family: 'GT2', sans-serif;">5D 3N Tokyo City Exploration</p>
+            </div>
+        </div>
+        <!-- CENTERED HERO TEXT END -->
+
+    </div>
+
+    <!-- MAIN BODY -->
+    <section class="container-fluid overflow-y-auto pb-5"
+        style="min-height: 100vh; width: 100vw;background-color: rgb(168, 199, 245);">
+
+        <!-- FLIGHT DETAILS  -->
+        <span class="d-flex align-items-center justify-content-center fs-1 py-5"
+            style="color:white; font-family: 'GT3', sans-serif;"> FLIGHT DETAILS </span>
+
+        <div class="container-fluid text-center d-flex justify-content-center">
+            <table class="table w-75">
+                <thead>
+                    <tr class="table-secondary">
+                        <th scope="col">Departure</th>
+                        <th scope="col">Arrival</th>
+                        <th scope="col">Flight</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-danger">
+                        <th scope="row">Fri, 23 Jun 2023</th>
+                        <th scope="row">Fri, 28 Jun 2023</th>
+                        <td>SQ320</td>
+                        <td>$1030</td>
+                        <td>FULLY BOOKED</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th scope="row">Fri, 24 Jun 2023</th>
+                        <th scope="row">Fri, 29 Jun 2023</th>
+                        <td>SQ323</td>
+                        <td>$1020</td>
+                        <td>FILLING FAST</td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">Fri, 24 Jun 2023</th>
+                        <th scope="row">Fri, 29 Jun 2023</th>
+                        <td>TR18</td>
+                        <td>$890</td>
+                        <td>AVAILABLE</td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">Fri, 25 Jun 2023</th>
+                        <th scope="row">Fri, 30 Jun 2023</th>
+                        <td>JL712</td>
+                        <td>$920</td>
+                        <td>AVAILABLE</td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">Fri, 27 Jun 2023</th>
+                        <th scope="row">Fri, 1 July 2023</th>
+                        <td>JL700</td>
+                        <td colspan="2"> TBA </td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">Fri, 28 Jun 2023</th>
+                        <th scope="row">Fri, 2 July 2023</th>
+                        <td>SQ300</td>
+                        <td colspan="2"> TBA </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- ITINERARY  -->
+        <span class="d-flex align-items-center justify-content-center fs-1 py-5"
+            style="color:white; font-family: 'GT3', sans-serif;"> ITINERARY </span>
+
+
+        <!-- DISPLAY ITINERARY IN ACCORDIAN -->
+        <div class="container-fluid text-center d-flex justify-content-center">
+
+            <div class="accordion w-75" id="myAccordian">
+
+
+                <!-- ACCORDIAN DAY 1 DETAILS  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            5D 3N Tokyo City Exploration: DAY 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordian">
+                        <div class="accordion-body fs-5" style="font-family: 'GT3', sans-serif;">
+
+                            <div>
+                                <p class="text-start"><u><b>Morning</b></u></p>
+                                <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <p class="text-start">
+                                    Take your selected flight from Singapore to Tokyo Narita Airport
+                                </p>
+                            </div>
+
+                            <div class="pt-3 d-flex justify-content-center">
+                                <div>
+                                    <p class="text-start"><u><b>Afternoon</b></u></p>
+                                    <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <p class="text-start pe-5">
+                                        Embark on a water sightseeing bus tour running between the Sumida River and
+                                        Odaiba
+                                        with a total of 8 stops along the way. This Mirai sightseeing ship was specially
+                                        designed by
+                                        Japanese animation master Reiji Matsumoto. It has a cool appearance and looks
+                                        like a
+                                        teardrop
+                                        and the ehtire hull is covered with a glass roof. Enjoy the breathtaking scenery
+                                        of
+                                        Tokyo on both
+                                        sides of the strait while sitting in this stunning ship.
+                                    </p>
+                                </div>
+                                <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <img class='img-fluid float-end rounded-4 border-0'
+                                    src="Images/details_day1_afternoon.jpeg" width="250px" height="150px"
+                                    alt="Day1_Morning">
+
+                            </div>
+
+                            <div>
+                                <p class="text-start mt-4"><u><b>Evening</b></u></p>
+                                <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <p class="text-start">
+                                    End the night at Takanawa Hanakohro hotel.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ACCORDIAN DAY 2 DETAILS  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            5D 3N Tokyo City Exploration: DAY 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordian">
+                        <div class="accordion-body fs-5" style="font-family: 'GT3', sans-serif;">
+
+
+                            <div class="pt-3 d-flex justify-content-center">
+                                <div>
+                                    <p class="text-start"><u><b>Morning - Afternoon</b></u></p>
+                                    <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <p class="text-start pe-5">
+                                        Spend the day at Tokyo DisneySea and Tokyo Disneyland.
+                                        First opened in 2001, the entire park sports a nautical theme and has seven main
+                                        areas or “ports of call.”
+                                        Each area features a number of rides, attractions, and entertainment venues
+                                        based on characters, stories,
+                                        and movies from the Disney collection.
+                                        With lots to do and a true plethora of entertainment options,
+                                        you will find yourself wanting to return again and again.
+                                    </p>
+                                </div>
+
+                                <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <img class='img-fluid float-end rounded-4 border-0' width="250px" height="150px"
+                                    src="Images/details_day2_morning.jpeg" alt="Day1_Morning">
+
+
+                            </div>
+
+                            <div>
+                                <p class="text-start mt-4"><u><b>Evening</b></u></p>
+                                <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <p class="text-start">
+                                    End your night at Tokyo's 3-star accomodation - Tune Inn Ebisu #2
+                                    located conveniently in the center of Tokyo.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCORDIAN DAY 3 DETAILS  -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            5D 3N Tokyo City Exploration: DAY 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordian">
+                        <div class="accordion-body fs-5" style="font-family: 'GT3', sans-serif;">
+
+                            <div class="pt-3 d-flex justify-content-center">
+
+                                <div class="pe-5">
+                                    <p class="text-start"><u><b>Morning</b></u></p>
+                                    <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <p class="text-start">
+                                        Visit the Meiji Jingu - a Shinto shrine dedicated to the Emperor Meiji and
+                                        his wife, Empress Shoken. It is located in Tokyo’s Shibuya ward. The shrine is
+                                        surrounded
+                                        by a forest park consisting of over 120,000 trees donated by people from all
+                                        parts of Japan.
+                                        Together with the adjacent Yoyogi Park, Meiji Jingu is part of a large
+                                        greenspace in central Tokyo.
+                                        Enormous torii, or gates, mark the entrance to the shrine complex. Because of
+                                        its size and the relative
+                                        seclusion it offers, Meiji Jingu is an extremely popular location.
+                                    </p>
+                                </div>
+
+                                <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <img class='img-fluid float-end rounded-4 border-0' width="250px" height="150px"
+                                    src="Images/details_day3_morning.jpeg" alt="Day1_Morning">
+
+
+                            </div>
+
+                            <div>
+                                <p class="text-start mt-4"><u><b>Afternoon</b></u></p>
+                                <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                <p class="text-start">
+                                    Head over to Tokyo Skytree, the world's tallest tower at 634 meters and
+                                    enjoy Tokyo's paranomic view from the top of Sumida City.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ACCORDIAN DAY 4 DETAILS  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                5D 3N Tokyo City Exploration: DAY 4
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordian">
+                            <div class="accordion-body fs-5" style="font-family: 'GT3', sans-serif;">
+
+
+                                <div class="pt-3 d-flex justify-content-center">
+
+                                    <div class="pe-5">
+                                        <p class="text-start"><u><b>Morning - Afternoon</b></u></p>
+                                        <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                        <p class="text-start">
+                                            Head over to Sanrio Puroland, also known as Hello Kitty Land,
+                                            Tokyo's indoor amusement park based on Sanrio cartoon stars
+                                            Hello Kitty, My Melody, Pom Pom Purin, and Jewelpet.
+                                            Fantasy-like, inviting, and full of creativity, it is a popular attraction
+                                            for both children and adults.
+                                        </p>
+                                    </div>
+                                    <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <img class='img-fluid float-end rounded-4 border-0' width="250px" height="150px"
+                                        src="Images/details_day4_afternoon.jpeg" alt="Day1_Morning">
+
+                                </div>
+
+                                <div>
+                                    <p class="text-start mt-3"><u><b>Evening</b></u></p>
+                                    <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <p class="text-start">
+                                        Check into Keio Plaza Hotel Tama near Sanrio Puroland
+                                        where you'll be staying for the night.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACCORDIAN DAY 5 DETAILS  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5D 3N Tokyo City Exploration: DAY 5
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordian">
+                            <div class="accordion-body fs-5" style="font-family: 'GT3', sans-serif;">
+
+                                <div class="pt-3 d-flex justify-content-center">
+
+                                    <div class="pe-5">
+                                        <p class="text-start"><u><b>Morning</b></u></p>
+                                        <!-- Itinerary Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                        <p class="text-start">
+                                            TeamLab Planets is a museum where you walk through water, and a garden
+                                            where you become one with the flowers. There are four massive exhibition
+                                            spaces and two gardens. By immersing the entire body with other people in
+                                            these massive body immersive artworks, the boundary between the body and
+                                            the artwork dissolves, the boundaries between the self, others, and the
+                                            world become continuous, and we explore a new relationship without
+                                            boundaries between ourselves and the world.
+                                        </p>
+                                    </div>
+                                    <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <img class='img-fluid float-end rounded-4 border-0' width="250px" height="150px"
+                                        src="Images/details_day5_morning.jpeg" alt="Day1_Morning">
+
+                                </div>
+
+                                <div class="pt-5 d-flex justify-content-center">
+
+                                    <div class="pe-5">
+                                        <p class="text-start"><u><b>Afternoon</b></u></p>
+                                        <!-- Itinerary Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                        <p class="text-start">
+                                            Located in a western portion of Tokyo, the Ghibli Museum is dedicated 
+                                            to showcasing the work of the Japanese animation house Studio Ghibli. 
+                                            Designed by Studio Ghibli director Hayao Miyazaki, the museum is heavily
+                                             influenced by European architectural styles. Miyazaki used film storyboards 
+                                             to sketch out a plan inspired by locations such as the hilltop village of 
+                                             Calcata in Italy. Full of everything related to Ghibli animations, visitors
+                                              can not only take a look at the animation buildings, they can also see 
+                                              original Ghibli works and other animation materials. The museum’s souvenir 
+                                              shop and themed restaurant are also very popular.
+                                        </p>
+                                    </div>
+                                    <!-- Image Extracted from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <img class='img-fluid float-end rounded-4 border-0' width="250px" height="150px"
+                                        src="Images/details_day5_afternoon.jpeg" alt="Day1_Morning">
+
+                                </div>
+
+                                <div class="pt-4">
+                                    <p class="text-start"><u><b>Evening</b></u></p>
+                                    <!-- Itinerary Summarized from https://www.trip.com/hot/travel-itinerary/tokyo-itinerary-7-days.html -->
+                                    <p class="text-start">
+                                        Your trip has been completed. Have a safe flight back to Singapore from Tokyo.
+                                        We hope you had an enjoyable time here in Tokyo and we hope to see you again!
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class='container-fluid d-flex align-items-center justify-content-center bg-dark'>
+        <address class='m-3' style="font-family: 'GT2', sans-serif; color: white;">© 2023 Regent Travel</address>
+    </footer>
+
+    <!-- FIXED SCROLL TO TOP BUTTON -->
+    <button class="fixed-bottom m-3 bg-dark rounded-4 border-0" style="width: 10vw;">
+        <a class="text-decoration-none" style="color: white;" href="#returnToTop">Return to Top</a>
+    </button>
+
+</body>
+
+</html>

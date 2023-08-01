@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src='bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js'></script>
+    
+    <style>
+        .nav-link,
+        .navbar-brand,
+        .dropdown-item {
+            color: white;
+        }
+
+        ul>li a:hover,
+        #mainName:hover {
+            color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <div id="returnToTop" class="bg-image"
+        style="background-image: url('Images/contact_us_header.jpeg'); background-size: cover; height:100vh; width: 100vw;">
+        <!-- HEADER NAV BAR  -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/icon-192x192.png" alt="Bootstrap" width="30" height="26">
+                </a>
+                <a id="mainName" href="index.html" class="navbar-brand fst-italic"
+                    style="font-family: 'GT6', sans-serif;">Regent Travel</a>
+                <!-- COLLAPSE NAV BAR WHEN SCREEN RESOLUTION SMALL -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAV BAR CONTENTS -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Regions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="region.html">Asia</a></li>
+                                <li><a class="dropdown-item" href="region.html">Europe</a></li>
+                                <li><a class="dropdown-item" href="region.html">Exotic</a></li>
+                                <li><a class="dropdown-item" href="region.html">Middle East</a></li>
+                                <li><a class="dropdown-item" href="region.html">North America</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Promotions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="package_details.html">6D 5N Turkey Adventure</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">5D 3N Tokyo City
+                                        Exploration</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">4D 2N Singapore </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- HEADER NAV BAR END -->
+
+        <!-- CENTERED HERO TEXT -->
+        <div class="w-100 my-5 mt-5 text-center position-absolute top-50 start-50 translate-middle"
+            style="color: white;">
+            <h1 class="display-3 fw-bolder" style="font-family: 'GT3', sans-serif;"> CONTACT US </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="font-family: 'GT2', sans-serif;">Reach Out and Let Your Travel Dreams Take
+                    Flight</p>
+            </div>
+        </div>
+        <!-- CENTERED HERO TEXT END -->
+
+    </div>
+
+
+    <!-- MAIN CONTACT US FORM BODY  -->
+    <section class="container-fluid overflow-y-auto pb-5"
+        style="min-height: 100vh; width: 100vw;background-color: rgb(207, 203, 203);">
+
+        <!-- INSTRUCTIONS TEXT FOR USERS  -->
+        <div class="d-flex align-items-center justify-content-center">
+            <p class="fs-4 mt-5 p-5 w-75 text-center" style="font-family: 'GT2', sans-serif; color:white;">Fill in the
+                form below if you have any enquires and our travel
+                advisor will get back to you shortly!</p>
+        </div>
+
+        <!-- FORM SECTION BEGINS HERE  -->
+        <form class="d-flex align-items-center justify-content-center" action="contacts_success.html" method="get">
+            <div class="row w-75">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name <span
+                        class="text-body-secondary">(Optional)</span></label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="">
+                </div>
+
+
+                <div class="col-12 mt-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 mt-2">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Singaporean</option>
+                        <option>Indonesian</option>
+                        <option>Malaysia</option>
+                        <option>Phillippines</option>
+                        <option>Thailand</option>
+                        <option>Others</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+
+                <div class="offset-md-1 col-md-3 mt-2">
+                    <label for="zip" class="form-label">Destination Region</label>
+                    <input type="text" class="form-control" id="zip" placeholder="Asia" required>
+                    <div class="invalid-feedback">
+                        Desired Destination required.
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <label for="zip" class="form-label">Budget</label>
+                    <input type="number" class="form-control" id="zip" placeholder="1000" required>
+                    <div class="invalid-feedback">
+                        Budget required.
+                    </div>
+                </div>
+
+                <button class="mt-5 w-100 btn btn-dark btn-lg" type="submit">Submit Form</button>
+
+            </div>
+        </form>
+
+
+        
+    </section>
+
+
+
+
+    <!-- FOOTER  -->
+    <footer class='container-fluid d-flex align-items-center justify-content-center bg-dark'>
+        <address class='m-3' style="font-family: 'GT2', sans-serif; color: white;">© 2023 Regent Travel</address>
+    </footer>
+
+    <!-- FIXED SCROLL TO TOP BUTTON -->
+    <button class="fixed-bottom m-3 bg-dark rounded-4 border-0" style="width: 10vw;">
+        <a class="text-decoration-none" style="color: white;" href="#returnToTop">Return to Top</a>
+    </button>
+
+</body>
+</html>

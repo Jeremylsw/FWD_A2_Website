@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src='bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js'></script>
+
+    <style>
+        .nav-link,
+        .navbar-brand,
+        .dropdown-item {
+            color: white;
+        }
+
+        ul>li a:hover, #mainName:hover{
+            color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <div id="returnToTop" class="bg-image"
+        style="background-image: url('Images/index_header.jpeg'); background-size: cover; height:100vh; width: 100vw;">
+        <!-- HEADER NAV BAR  -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#returnToTop">
+                    <img src="Images/icon-192x192.png" alt="Bootstrap" width="30" height="26">
+                </a>
+                <a id = "mainName" class="navbar-brand fst-italic" style="font-family: 'GT6', sans-serif;">Regent Travel</a>
+                <!-- COLLAPSE NAV BAR WHEN SCREEN RESOLUTION SMALL -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAV BAR CONTENTS -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#ourStory">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Regions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="region.html">Asia</a></li>
+                                <li><a class="dropdown-item" href="region.html">Europe</a></li>
+                                <li><a class="dropdown-item" href="region.html">Exotic</a></li>
+                                <li><a class="dropdown-item" href="region.html">Middle East</a></li>
+                                <li><a class="dropdown-item" href="region.html">North America</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Promotions
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="package_details.html">6D 5N Turkey Adventure</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">5D 3N Tokyo City Exploration</a></li>
+                                <li><a class="dropdown-item" href="package_details.html">4D 2N Singapore </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- HEADER NAV BAR END -->
+
+        <!-- CENTERED HERO TEXT -->
+        <div class="w-100 my-5 mt-5 text-center position-absolute top-50 start-50 translate-middle"
+            style="color: white;">
+            <h1 class="display-3 fw-bolder" style="font-family: 'GT3', sans-serif;"> Welcome </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="font-family: 'GT2', sans-serif;">Redefining your travel experience one trip
+                    at a time</p>
+            </div>
+        </div>
+        <!-- CENTERED HERO TEXT END -->
+
+    </div>
+
+    <!-- OUR STORY -->
+    <div id='ourStory' class="container-fluid text-center d-flex align-items-center justify-content-center p-5"
+        style="height:100vh; background-color: lightblue;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center fs-3"
+                style="font-family: 'GT2', sans-serif;">
+                OUR STORY
+            </div>
+            <div class="col-md-6 col-sm-12 rounded-4 p-4 fs-3"
+                style="background-color: white; font-family: 'GT3', sans-serif;">
+                <small>Regent Travel was founded on the belief that travel should be more
+                    than just a checklist of destinations.It should be an</small>
+                <b>immersive, meaningful,
+                    and unforgettable journey</b>
+                <small>that opens your mind and enriches your soul. </small>
+                <br><br>
+                <small>Our company was born out of a love for exploration and a desire to share
+                    the wonders of the world with fellow wanderers.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHAT WE OFFER  -->
+    <div id="ourServices" class="container-fluid text-center d-flex align-items-center justify-content-center p-5"
+        style="height:100vh; background-color: rgb(164, 205, 218);">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 order-md-2 order-sm-1 d-flex align-items-center justify-content-center fs-3"
+                style="font-family: 'GT2', sans-serif;">
+                WHAT WE OFFER
+            </div>
+            <div class="col-md-6 col-sm-12 order-md-1 order-sm-2 rounded-4 p-4 fs-3"
+                style="background-color: white; font-family: 'GT3', sans-serif;">
+                <small>At Regent Travel, we specialize in </small>
+                <b>crafting bespoke travel experiences </b>
+                <small> tailored to the unique interests and preferences of our customers.
+                    We understand that every traveler is different, and that's why we take the
+                    time to understand your desires and aspirations. </small>
+                <br><br>
+                <b>Select from an existing plan</b>
+                <small>crafted by a fellow traveller or</small>
+                <b>create your own personalized travel plan</b>
+                <small> with the help of our friendly service staff.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- REGIONS CAROUSELL DISPLAY  -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="region.html">
+                    <img src="Images/asia_wallpaper.jpg" class="d-block w-100" style="height:100vh; object-fit: cover;"
+                        alt="...">
+                </a>
+                <div class="carousel-caption  rounded-4 d-flex align-items-center justify-content-center opacity-50">
+                    <h1 class="rounded-5 " style="width: 20vw; background-color: white;">
+                        <span class="opacity-100 fw-bolder" style="font-family: 'GT3', sans-serif; color: black;">
+                            ASIA
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="region.html">
+                    <img src="Images/europe_wallpaper.jpeg" class="d-block w-100"
+                        style="height:100vh; object-fit: cover;" alt="...">
+                </a>
+                <div class="carousel-caption  rounded-4 d-flex align-items-center justify-content-center opacity-50">
+                    <h1 class="rounded-5 " style="width: 20vw; background-color: white;">
+                        <span class="opacity-100 fw-bolder" style="font-family: 'GT3', sans-serif; color: black;">
+                            EUROPE
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="region.html">
+                    <img src="Images/exotic_wallpaper.jpg" class="d-block w-100"
+                        style="height:100vh; object-fit: cover;" alt="...">
+                </a>
+                <div class="carousel-caption  rounded-4 d-flex align-items-center justify-content-center opacity-50">
+                    <h1 class="rounded-5 " style="width: 20vw; background-color: white;">
+                        <span class="opacity-100 fw-bolder" style="font-family: 'GT3', sans-serif; color: black;">
+                            EXOTIC
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="region.html">
+                    <img src="Images/middle_east_wallpaper.jpg" class="d-block w-100"
+                        style="height:100vh; object-fit: cover;" alt="...">
+                </a>
+                <div class="carousel-caption  rounded-4 d-flex align-items-center justify-content-center opacity-50">
+                    <h1 class="rounded-5 " style="width: 20vw; background-color: white;">
+                        <span class="opacity-100 fw-bolder" style="font-family: 'GT3', sans-serif; color: black;">
+                            MIDDLE EAST
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="region.html">
+                    <img src="Images/north_america_wallpaper.jpeg" class="d-block w-100"
+                        style="height:100vh; object-fit: cover;" alt="...">
+                </a>
+                <div class="carousel-caption rounded-4 d-flex align-items-center justify-content-center opacity-50">
+                    <h1 class="rounded-5 " style="width: 20vw; background-color: white;">
+                        <span class="opacity-100 fw-bolder" style="font-family: 'GT3', sans-serif; color: black;">
+                            NORTH AMERICA
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- FOOTER  -->
+    <footer class='container-fluid d-flex align-items-center justify-content-center bg-dark'>
+        <address class='m-3' style="font-family: 'GT2', sans-serif; color: white;">© 2023 Regent Travel</address>
+    </footer>
+
+    <!-- FIXED SCROLL TO TOP BUTTON -->
+    <button class="fixed-bottom m-3 bg-dark rounded-4 border-0" style="width: 10vw;">
+        <a class="text-decoration-none" style="color: white;" href="#returnToTop">Return to Top</a>
+    </button>
+
+</body>
+
+</html>
